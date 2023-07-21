@@ -1,0 +1,104 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+}
+.container-1
+{
+    background-image: url('./images/bg.png');
+    height: 90vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left:30px ;
+}
+span
+{
+    color: rgb(0, 98, 245);
+    font-size: 2rem;
+}
+.menu-section
+{
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu-section a{
+    text-decoration: none;
+    padding-left: 30px;
+    color: black;
+    text-transform: capitalize;
+    align-items: center;
+}
+.intro
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    width: 50%;
+    padding-top: 120px;
+    margin-left: 30px;
+}
+.intro h1
+{
+    padding-bottom: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.9rem;
+}
+.intro p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 74%;
+    height: auto;
+    font-size: 1.1rem;
+    color: grey;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.intro a
+{
+    width: 240px;
+    height: 150px;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #e44747;
+    border-color: #e44747;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right:2px ;
+    line-height: 100%;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form .btn
+{
+    background-color: #e44747;
+    border-color: #e44747;
+}

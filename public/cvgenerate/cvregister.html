@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Your Cv</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="cvstyle.css">
+    <script src="https://kit.fontawesome.com/22a2f640f1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h1 class="text-center my-3">My Resume</h1>
+    <div class="container " id="cv-form">
+        <form class="my-3" id="submit">
+            <div class="form-group my-2">
+                <label for="exampleFormControlInput1" class="fw-bold">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="enter your name">
+            </div>
+            <div class="form-group  my-2">
+                <label for="exampleFormControlInput1" class="fw-bold">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="enter your email">
+            </div>
+            <div class="form-group my-2">
+                <label for="exampleFormControlTextarea1" class="fw-bold">Highlight Your Position</label>
+                <input class="form-control" id="about"></input>
+            </div>
+            <div class="form-group my-2">
+                <label for="exampleFormControlInput1" class="fw-bold">Your Github Link</label>
+                <input type="text" class="form-control" id="github" placeholder="github">
+                <label for="exampleFormControlInput1" class="fw-bold">Your LinkdIn Link</label>
+                <input type="text" class="form-control" id="linkdin" placeholder="linkdin">
+            </div>
+            <div class="form-group my-2">
+                <label for="exampleFormControlTextarea1" class="fw-bold">Tell About Yourself</label>
+                <textarea class="form-control" id="objectives" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1" class="fw-bold">Experience</label>
+                <ul class="my-1">
+                    <li><input type="text" class="form-control input-lg my-1" id="experience-1"></li>
+                    <li><input type="text" class="form-control input-lg my-1" id="experience-2"></li>
+                    <li><input type="text" class="form-control input-lg my-1" id="experience-3"></li>
+                </ul>
+            </div>
+            <div class="form-group my-2">
+                <label for="form-control" class="fw-bold">Enter Your Skills</label>
+                <ul class="my-1 ">
+                    <li><input type="text" class="form-control  my-1"></li>
+                    <li><input type="text" class="form-control my-1"></li>
+                    <li><input type="text" class="form-control my-1"></li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="fw-bold">Education</label>
+                <ul class="my-2">
+                    <li><input type="text" class="form-control  my-1" id="qualificaton"></li>
+                </ul>
+            </div>
+            <div class="text-center my-3">
+                <button type="submit" class="btn btn-primary text-center" onclick="result()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!--Template File-->
+
+    <div class="container" id="cv-template">
+        <div class="row">
+            <div class="col-md-2 text-center py-5 background">
+                <div class="container">
+                    <p id="tname">sayem</p>
+                    <p id="tabout">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident officiis, quos
+                        excepturi
+                        iusto et modi, porro suscipit, accusantium laborum sequi unde aspernatur animi impedit velit.
+                    </p>
+                    <hr />
+                    <a href="" class="px-2" id="tgithub">Github</a>
+                    <a href="" id="tlinkdin">LinkdIn</a>
+                </div>
+            </div>
+            <div class="col-md-8 py-5">
+                <h1 class="text-center" id="tname1">
+                    Arafat Hossain Sayem
+                </h1>
+
+                <!--objective part-->
+                <div class="card mt-1">
+                    <div class="card-header background">
+                        <h1>Objectives</h1>
+                    </div>
+                    <div class="card-body">
+                        <p id="tobjectives">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet unde quis
+                            excepturi
+                            cupiditate quos reiciendis assumenda, labore error fugiat exercitationem aliquid. Asperiores
+                            quae aut enim repellendus iste amet? Dicta, impedit.</p>
+                    </div>
+                </div>
+
+
+                <!--work experience-->
+
+                <div class="card mt-5">
+                    <div class="card-header background">
+                        <h1>Work Experience</h1>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li id="t-experience-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error,
+                                explicabo!</li>
+                            <li id="t-experience-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni,
+                                quasi.</li>
+                            <li id="t-experience-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Qualificatons-->
+
+                <div class="card mt-3">
+                    <div class="card-header background">
+                        <h1>Qualifications</h1>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li id="t-qualification-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error,
+                                explicabo!</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center my-3">
+                <button type="submit" class="btn btn-primary text-center" id="resume-print" onclick="printCv()">Print Resume</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+<script src="app.js"></script>
+
+</html>
